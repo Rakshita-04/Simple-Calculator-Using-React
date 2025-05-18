@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #121212;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.container.light {
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+.calculator {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 16px;
+  max-width: 320px;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.container.light .calculator {
+  background: white;
+}
+
+input[type="text"] {
+  width: 100%;
+  font-size: 1.5em;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: none;
+  background-color: #333;
+  color: #0f0;
+}
+
+.container.light input[type="text"] {
+  background-color: #eee;
+  color: #000;
+}
+
+.buttons,
+.sci-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 15px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 8px;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #666;
+}
+
+.container.light button {
+  background-color: #ddd;
+  color: #000;
+}
+
+.container.light button:hover {
+  background-color: #bbb;
+}
+
+.theme-toggle {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.history {
+  margin-left: 30px;
+  max-width: 250px;
+}
+
+.history h3 {
+  margin-top: 0;
+}
+
+.history ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.history li {
+  margin-bottom: 8px;
+}
